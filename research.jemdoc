@@ -1,0 +1,67 @@
+# jemdoc: menu{MENU}{research.html}, nodate
+# jemdoc: title{Research Projects | George Brova}
+# jemdoc: analytics{UA-26266792-1}
+
+[http://cs-people.bu.edu/gbrova/ George Brova]
+= Research Projects (at Boston University)
+
+== Peer and Authority Pressure in Information Propagation Models
+Existing models of information diffusion assume that peer influence is
+  the main reason for observed propagation patterns. In this work, we
+  examined the role of authority pressure on the observed information
+  cascades, by characterizing some nodes in the network as “authority”
+  nodes. In collaboration with my mentor, I developed a model that
+  associates every information item with two parameters that quantify the
+  impact of peer and authority pressure on its propagation. I then
+  implemented functions to learn these parameters given a network and the
+  observed diffusion patterns of the item, and characterize the item as
+  peer- or authority-propagated, by setting up and solving a convex
+  optimization problem. My advisor and I also developed a randomization
+  test that evaluates the statistical significance of our findings and
+  makes our item characterization robust to noise. I applied this method
+  to real data from online media and scientific-collaboration networks,
+  and found that there is a strong signal of authority pressure in these
+  networks. 
+
+This work resulted in a publication: 
+ - Aris Anagnostopoulos, George Brova, Evimaria Terzi:
+ “[papers/PKDD2011_anagnostopoulosBT.pdf Peer
+    and authority pressure in information-propagation models]”,
+    Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)
+    2011. \[[papers/PKDD2011Code.zip code]\]
+
+
+== Graph-Agnostic Identification of Influence Relationships
+Although our work on peers and authorities assumed that peer
+  connections are known, this information is missing in many real
+  applications. For example, our Yahoo! collaborator pointed out that
+  Yahoo! knows the times when users clicked on an advertisement or adopted
+  a product but remains unaware of the social relationships amongst its
+  users. My current research focuses on identifying the roles of
+  individuals in a network without knowing the structure of the network
+  itself, and using the activation times of individuals with respect to
+  items as clues. This work is in collaboration with my mentor at Boston
+  University and Kun Liu, who is a research scientist at Yahoo!.
+
+== Query by Humming
+Query-by-humming (QBH) enables users to identify a song by humming or
+  singing a section of it. While existing work and commercial applications
+  rely on a collection of query samples for each song in their database,
+  our approach does not require any training queries. My primary
+  contribution to this project was to define a new measure of edit
+  distance between two melodies that tolerates mistakes commonly made by
+  amateur singers. For example, many people shorten pauses in songs, and
+  sing slightly off tune, such that the difference in pitch between two
+  successive notes is accurate even if each note by itself is
+  off-key. Therefore, my edit distance measure penalizes such mistakes
+  less heavily. I also defined a multi-dimensional time series format in
+  which to represent both the library of songs (which consist of many
+  tracks, each corresponding to different instruments or vocals) and the
+  hummed queries (which only contain information about the notes hummed),
+  so that the two can be meaningfully compared. I implemented the above
+  metrics, as well as a Fast Fourier Transform algorithm to convert a sung
+  query into a sequence of notes, to create a functioning query-by-humming
+  system. I also wrote a web crawler to create a large collection of test
+  queries, which I used to evaluate the accuracy of the system. 
+
+

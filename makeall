@@ -1,0 +1,3 @@
+python jemdoc.py index.jemdoc
+python jemdoc.py research.jemdoc
+

@@ -1,0 +1,45 @@
+# jemdoc: menu{MENU}{index.html}, nodate
+# jemdoc: analytics{UA-26266792-1}
+# jemdoc: title{George Brova}
+
+\n
+
+= George Brova
+
+== About me
+~~~
+{}{img_left}{gb.jpeg}{George}{120px}{120px}{}
+
+I am cofounder and CTO at [https://www.migacore.com Migacore Technologies], where we use NLP and AI to help travel companies understand changes in demand patterns. 
+
+
+Before this, I worked at companies including Palantir Technologies (distributed databases), Google (natural language processing), and Groupon (personalization). 
+
+My CV is available [GB-CV.pdf here].
+
+~~~
+
+== Research 
+
+I am on leave from the PhD program in Computer Science at the [http://www.illinois.edu University of Illinois at Urbana-Champaign], 
+where I am a member of the [http://dm1.cs.uiuc.edu/ Data Mining Research Group] and advised by Professor [http://www.cs.uiuc.edu/~hanj/ Jiawei Han]. 
+
+I graduated with my BA and MA degrees from Boston University in May 2012, 
+where Professor [http://www.cs.bu.edu/~evimaria/ Evimaria Terzi] was my advisor. 
+
+My research interests are in the general area of data management. In
+particular, I am interested in the
+design and development of algorithms for efficient data analysis and retrieval.
+
+
+== Publications
+ - Huan Gui, Yizhou Sun, Jiawei Han, George Brova: "[papers/CIKM2014_gui.pdf Modeling Topic Diffusion in Multi-Relational Bibliographic Information Networks]", CIKM 2014.
+ - Fangbo Tao, George Brova, Jiawei Han, Heng Ji, Chi Wang, Brandon Norick, Ahmed El-Kishky, Jialu Liu, Xiang Ren, Yizhou Sun: [papers/SIGMOD2014_tao.pdf NewsNetExplorer: automatic construction and exploration of news information networks]", SIGMOD Conference 2014. 
+ - Honglei Zhuang, Jing Zhang, George Brova, Jie Tang, Hasan Çam, Xifeng Yan, Jiawei Han: "[papers/ICDM14_outlier_query.pdf Mining Query-Based Subnetwork Outliers in Heterogeneous Information Networks], ICDM Conference 2014.
+ - Fangbo Tao, Xiao Yu, Kin Hou Lei, George Brova, Xiao Cheng, Jiawei Han, Rucha Kanade, Yizhou Sun, Chi Wang, Lidan Wang, Tim Weninger: [papers/SIGMOD2013_tao.pdf Research-insight: providing insight on research by publication network analysis]", SIGMOD Conference 2013.
+ - Aris Anagnostopoulos, George Brova, Evimaria Terzi:
+ "[papers/PKDD2011_anagnostopoulosBT.pdf Peer
+    and authority pressure in information-propagation models]",
+    Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)
+    2011. \[[papers/PKDD2011Code.zip code]\]
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Research Projects | George Brova</title>
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-26266792-1");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">about</a></div>
+</td>
+<td id="layout-content">
+<p><a href="http://cs-people.bu.edu/gbrova/">George Brova</a></p>
+<h1>Research Projects (at Boston University)</h1>
+<h2>Peer and Authority Pressure in Information Propagation Models</h2>
+<p>Existing models of information diffusion assume that peer influence is
+the main reason for observed propagation patterns. In this work, we
+examined the role of authority pressure on the observed information
+cascades, by characterizing some nodes in the network as “authority”
+nodes. In collaboration with my mentor, I developed a model that
+associates every information item with two parameters that quantify the
+impact of peer and authority pressure on its propagation. I then
+implemented functions to learn these parameters given a network and the
+observed diffusion patterns of the item, and characterize the item as
+peer- or authority-propagated, by setting up and solving a convex
+optimization problem. My advisor and I also developed a randomization
+test that evaluates the statistical significance of our findings and
+makes our item characterization robust to noise. I applied this method
+to real data from online media and scientific-collaboration networks,
+and found that there is a strong signal of authority pressure in these
+networks. </p>
+<p>This work resulted in a publication: </p>
+<ul>
+<li><p>Aris Anagnostopoulos, George Brova, Evimaria Terzi:
+“<a href="papers/PKDD2011_anagnostopoulosBT.pdf">Peer
+and authority pressure in information-propagation models</a>”,
+Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)
+2011. [<a href="papers/PKDD2011Code.zip">code</a>]</p>
+</li>
+</ul>
+<h2>Graph-Agnostic Identification of Influence Relationships</h2>
+<p>Although our work on peers and authorities assumed that peer
+connections are known, this information is missing in many real
+applications. For example, our Yahoo! collaborator pointed out that
+Yahoo! knows the times when users clicked on an advertisement or adopted
+a product but remains unaware of the social relationships amongst its
+users. My current research focuses on identifying the roles of
+individuals in a network without knowing the structure of the network
+itself, and using the activation times of individuals with respect to
+items as clues. This work is in collaboration with my mentor at Boston
+University and Kun Liu, who is a research scientist at Yahoo!.</p>
+<h2>Query by Humming</h2>
+<p>Query-by-humming (QBH) enables users to identify a song by humming or
+singing a section of it. While existing work and commercial applications
+rely on a collection of query samples for each song in their database,
+our approach does not require any training queries. My primary
+contribution to this project was to define a new measure of edit
+distance between two melodies that tolerates mistakes commonly made by
+amateur singers. For example, many people shorten pauses in songs, and
+sing slightly off tune, such that the difference in pitch between two
+successive notes is accurate even if each note by itself is
+off-key. Therefore, my edit distance measure penalizes such mistakes
+less heavily. I also defined a multi-dimensional time series format in
+which to represent both the library of songs (which consist of many
+tracks, each corresponding to different instruments or vocals) and the
+hummed queries (which only contain information about the notes hummed),
+so that the two can be meaningfully compared. I implemented the above
+metrics, as well as a Fast Fourier Transform algorithm to convert a sung
+query into a sequence of notes, to create a functioning query-by-humming
+system. I also wrote a web crawler to create a large collection of test
+queries, which I used to evaluate the accuracy of the system. </p>
+</td>
+</tr>
+</table>
+</body>
+</html>
