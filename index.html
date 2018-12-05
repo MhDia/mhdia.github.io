@@ -100,7 +100,22 @@ img {
     margin-right: auto;
 }
 </style>
-<p style="font-size:1.5vw;"> Spatial coupling</p>
+<p style="font-size:1.5vw;"> Spatial coupling is a powerful graphical representation used to improve 
+the algorithmic message-passing performance. It is the underlying principle behind the threshold saturation phenomenon 
+(where the algoritmic threshold achieves the optimal one). Such representation was successfully applied to multiple 
+graphical models ranging from LDPC codes to compressed sensing. Spatial coupling can be represented via a graphical model starting from the
+original factor graph. Assume that we have a factor graph of size <math> N </math>. We take
+several instances of this factor graph and we place them next to each other on
+a chain of length <math> &Gamma </math>. Then, we locally couple the underlying factor graphs with
+a coupling window <math> w </math> to obtain a bigger factor graph of size <math> &Gamma &times N </math> (see figure below). 
+In the resulting factor graph, each variable node is connected to the corresponding
+check nodes of the same underlying factor graph and to the check
+nodes of the neighboring factor graphs. This construction creates a spatial
+dimension, along the positions of the chain, that will help the algorithm. The
+second step in constructing efficient spatially coupled graphs is to introduce
+a seed at a certain position of the chain. This seed can be introduced as a
+side information which helps the algorithm at the boundaries and initiates a
+“wave” that propagates inwards and boosts the performance.</p>
 			    
 <img src="spaCoup1.png" alt="Spatial Coupling" style="font-size:0.2vw;width:40%"/>&nbsp;
 												
