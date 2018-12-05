@@ -54,7 +54,7 @@ try {
 <p style="font-size:1.5vw;"> I was a visiting researcher at Nokia Bell Labs, Germany in 2017 where I worked on the design of a novel coding scheme for the high-speed fiber optical
 	communication systems. I was also a graduate student researcher at the European Technology Center of SONY, Germany in 2014
 	working on the standardization of digital terrestrial TV broadcasting receivers. In 2011,
-	I did my undergraduate internship at the University of California, Berkeley U.S.A. where I contributed to the "Mobile Millennium" traffic-monitoring project.
+	I did my undergraduate internship at the University of California, Berkeley U.S.A. where I contributed to the “Mobile Millennium” traffic-monitoring project.
 	</p>
 	
 <p style="font-size:1.5vw;">My CV is available <a href="CV_Mohamad_Dia.pdf"target="_blank">here</a>.</p>
@@ -62,7 +62,8 @@ try {
 											  
 <h2 style="font-size:2vw;">Research Interests</h2>
 <p style="font-size:1.5vw;">
-My research interests lie at the interface between statistical inference, machine learning, coding theory, and statistical physics of spin glasses. Currently, I am working on applying and developing new data science tools for the <a href="http://sci.esa.int/euclid/"target="_blank">"Euclid"</a> space mission project in order to
+My research interests lie at the interface between statistical inference, machine learning, coding theory, and statistical physics of spin glasses. Currently, I am working on applying and developing new data science tools for the <a href="http://sci.esa.int/
+      /"target="_blank">“Euclid”</a> space mission project in order to
 investigate dark matter. My PhD research at EPFL's <a href="https://ipg.epfl.ch/"target="_blank">Information Processing Group (IPG)</a> was principally focused on inference and learning over graphical models,
 which includes problems from error-correcting codes, compressed sensing, and community detection.
 My work spans both the practical and theoretical aspects of such problems. This covers the design and analysis of optimal low-complexity message-passing algorithms,
@@ -115,7 +116,14 @@ dimension, along the positions of the chain, that will help the algorithm. The
 second step in constructing efficient spatially coupled graphs is to introduce
 a seed at a certain position of the chain. This seed can be introduced as a
 side information which helps the algorithm at the boundaries and initiates a
-“wave” that propagates inwards and boosts the performance.</p>
+“wave” that propagates inwards and boosts the performance. Interestingly, spatial coupling can be used both as a “construction technique” 
+ to boost the algorithmic performance and as a “proof technique” to compute some information theoretic quantities.
+Therefore, even if the problem at hand does not provide the freedom of
+constructing a spatially coupled model in practice, one can still use spatial coupling for an auxiliary model. 
+Intuitively speaking, since the low-complexity
+algorithm on the auxiliary model is optimal by the threshold saturation phenomenon,
+it is easier to compute the information theoretic quantities on that
+model and then apply them to the underlying model. </p>
 			    
 <img src="spaCoup1.png" alt="Spatial Coupling" style="font-size:0.2vw;width:40%"/>&nbsp;
 												
